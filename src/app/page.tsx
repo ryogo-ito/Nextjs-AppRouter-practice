@@ -6,5 +6,5 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <Link href="/blog">blog</Link>;
+  return <Link href="/dashboard">dashboard</Link>;
 }
