@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import Button from "@/app/components/Button";
 
 interface Post {
   userId: number;
@@ -25,7 +26,10 @@ export default async function Page() {
       <Suspense fallback={<p>...loading</p>}>
         <ul>
           {data.map((post) => (
-            <li key={post.id}>{post.title}</li>
+            <div key={post.id}>
+              <li>{post.title}</li>
+              <Button>テスト</Button>
+            </div>
           ))}
         </ul>
       </Suspense>
